@@ -6,7 +6,7 @@ const DonutChart = () => {
     const segmentLabels = ['content1', 'content2', 'content1', 'content2'];
     const segmentColors = ['fff1c9', 'f7b7a9', 'ea5f89', 'e1e1e1'];
     const [newArray, setNewArray] = useState([]);
-    const [setDashArray] = useState([]);
+    const [,setDashArray] = useState([]);
 
     useEffect(() => {
         calculateData();
