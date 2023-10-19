@@ -5,7 +5,8 @@
     margin-bottom: 30px;
     border-radius: 10px;
     padding: 20px;
-
+   
+    
 }
 
 .donut-chart p {
@@ -19,3 +20,73 @@
         width: 100%;
     }
 }
+
+.don{
+    display: flex;
+    justify-content: center;
+}
+  
+  .donut-chart__content {
+    min-width: 150px;
+    min-height: 150px;
+    width: 300px;
+    height: 300px;
+    
+  }
+  
+  .donut-chart__donut-segment {
+    stroke-width: 5;
+    transition: stroke-width 0.2s ease;
+
+  }
+  
+  .donut-chart__donut-segment:hover {
+    stroke-width: 8;
+    box-shadow:5px 10px #888888;
+
+  }
+  
+  .donut-chart__chart-text {
+    font-family:  "Montserrat", Arial, sans-serif;
+    font-size: 16px;
+    fill: #000;
+    -moz-transform: translateY(0.25em);
+    -ms-transform: translateY(0.25em);
+    -webkit-transform: translateY(0.25em);
+    transform: translateY(0.25em);
+  }
+  
+  .donut-chart__chart-number {
+    font-size: 0.35em;
+    font-weight: 600;
+    line-height: 1;
+    text-anchor: middle;
+    -moz-transform: translateY(-0.25em);
+    -ms-transform: translateY(-0.25em);
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+  }
+  
+  .donut-chart__chart-label {
+    font-size: 0.2em;
+    text-anchor: middle;
+    -moz-transform: translateY(0.7em);
+    -ms-transform: translateY(0.7em);
+    -webkit-transform: translateY(0.7em);
+    transform: translateY(0.7em);
+  }
+  
+  .donut-chart__donut-segment {
+    animation-name: donut-chart__fill-in;
+    animation-fill-mode: forwards;
+    animation-duration: 2000ms;
+  }
+  
+  @keyframes donut-chart__fill-in {
+    from {
+      stroke-dashoffset: 0;
+    }
+    to {
+    }
+  }
+  

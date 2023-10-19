@@ -45,7 +45,7 @@ const CustomTable = () => {
                       <img src={row.image} alt="Product" style={{ width: '70px', marginRight: '10px', borderRadius: "5px" }} />
                       <div>
                         <h4>{row.heading}</h4>
-                        <p>{row.description}</p>
+                        <p className='table-header-cell'>{row.description}</p>
                       </div>
                     </div>
                   </TableCell>
