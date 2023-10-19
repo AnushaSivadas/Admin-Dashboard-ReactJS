@@ -6,20 +6,17 @@ const DonutChart = () => {
     const segmentLabels = ['content1', 'content2', 'content1', 'content2'];
     const segmentColors = ['fff1c9', 'f7b7a9', 'ea5f89', 'e1e1e1'];
     const [newArray, setNewArray] = useState([]);
-    const [dashArray, setDashArray] = useState([]);
+    const [setDashArray] = useState([]);
 
     useEffect(() => {
         calculateData();
-    }, []);
+    });
 
     const calculateData = () => {
         const arraySum = array.reduce((x, y) => x + y, 0);
         const calculatedArray = array.map((value) => (value * 100) / arraySum);
 
-        let segSum = 0;
         const calculatedDashArray = calculatedArray.map((value, index) => {
-            let offset = 100 - segSum + 25;
-            segSum += value;
             return value;
         });
 
