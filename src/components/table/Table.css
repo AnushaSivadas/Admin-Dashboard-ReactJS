@@ -1,0 +1,29 @@
+.table{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+  margin-bottom: 30px;
+}
+
+.table-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-right{
+    display: flex;
+}
+
+.table-search{
+    background-color: #ebebf36e;
+    margin-right: 15px;
+}
+
+.table-header-cell{
+    opacity: 0.6;
+    font-size: 12px;
+    font-weight: 700;
+
+}

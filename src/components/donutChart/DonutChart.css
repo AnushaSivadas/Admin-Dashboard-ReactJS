@@ -1,0 +1,21 @@
+.donut-chart {
+    min-width: 200px;
+    width: 30%;
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.donut-chart p {
+    opacity: 0.6;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+    .donut-chart {
+        width: 100%;
+    }
+}
