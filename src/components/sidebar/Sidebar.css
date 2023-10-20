@@ -1,9 +1,6 @@
-.sidebar {
+/* .sidebar {
     width: 250px;
     height: 100vh;
-    position: fixed;
-    top:0;
-    left:0;
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -11,6 +8,21 @@
     background-color: #04042b;
     transition: left 0.3s ease;
     z-index: 1000;
+} */
+.sidebar{
+    
+position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 10px;
+    z-index: 1000;
+    background-color:  #04042b;
+    overflow-y: auto;
 }
 
 .dashboard-top {
@@ -114,7 +126,7 @@ li.active {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
     .sidebar.visible {
         margin-left: -200px;

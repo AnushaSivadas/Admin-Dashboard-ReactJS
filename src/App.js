@@ -11,8 +11,10 @@ function App() {
     <div className="App">
       <Sidebar />
       <div className='dashboard-body'>
+       
         <Navbar />
-        <Cards />
+         <Cards />
+         
         <div className='charts'>
           <BarChart />
           <DonutChart />

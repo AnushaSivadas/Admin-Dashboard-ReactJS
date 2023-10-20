@@ -1,76 +1,139 @@
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-  }
-  .card {
-    display: flex;
-    align-items: center;
-    flex-grow: 0;
-    flex-basis: 200;
-    width: 100%; 
-    max-width: 235px; 
-    height: auto; 
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-  }
-  .card-icon {
-    height: 50px;
-    width: 50px;
-    padding: 25px;
-    border-radius: 100%;
-    margin-right: 10px;
-  }
-
-  .card:first-child .card-icon {
-    color: rgba(7, 108, 21, 0.896);
-    background: linear-gradient(to bottom left, rgba(48, 233, 73, 0.896), white);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0;
+  flex-basis: 200;
+  width: 100%;
+  max-width: 235px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.card-icon {
+  height: 50px;
+  width: 50px;
+  padding: 25px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.card:first-child .card-icon {
+  color: rgba(7, 108, 21, 0.896);
+  background: linear-gradient(to bottom left, rgba(48, 233, 73, 0.896), white);
+}
+
 .card:nth-child(2) .card-icon {
-    color: purple;
-    /* background: rgba(128, 0, 128, 0.292); */
-    background: linear-gradient(to bottom left, rgba(128, 0, 128, 0.455), white);
+  color: purple;
+  /* background: rgba(128, 0, 128, 0.292); */
+  background: linear-gradient(to bottom left, rgba(128, 0, 128, 0.455), white);
 }
+
 .card:nth-child(3) .card-icon {
-    color: rgb(10, 10, 138);
-    background: linear-gradient(to bottom left, rgba(10, 10, 138, 0.653), white);
+  color: rgb(10, 10, 138);
+  background: linear-gradient(to bottom left, rgba(10, 10, 138, 0.653), white);
 
 }
+
 .card:last-child .card-icon {
-    color: red;
-    background: linear-gradient(to bottom left, rgba(255, 0, 0, 0.793), white);
+  color: red;
+  background: linear-gradient(to bottom left, rgba(255, 0, 0, 0.793), white);
 
 }
 
-  .card-details > span {
-    opacity: 0.6;
-    font-size: 12px;
-    font-weight: 700;
+.card-details>span {
+  opacity: 0.6;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card-details p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card-details div {
+  font-size: 10px;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+@media (max-width: 900px) {
+  .cards {
+    padding: 0px 45px;
+
   }
-   .card-details p {
-    font-size: 20px;
-    font-weight: 700;
+
+}
+
+@media (max-width: 790px) {
+  .cards {
+    /* justify-content: center; */
+    /* gap: 20px; */
+    padding: 0px 0px;
+
   }
-  .card-details div{
-    font-size: 10px;
-    font-weight: 700;
-    opacity: 0.9;
+}
+
+@media (max-width: 720px) {
+
+  .card {
+    max-width: 210px;
   }
-  .red{
-    color: red;
+
+  .card-icon {
+    height: 30px;
+    width: 30px;
   }
-  .green{
-    color: green;
+
+  .card-details>span {
+    font-size: 9px;
+
   }
-  
-@media (max-width: 880px) {
-   .cards{
+
+  .card-details p {
+    font-size: 15px;
+
+  }
+
+  .card-details div {
+    font-size: 8px;
+
+  }
+
+}
+
+@media (max-width: 630px) {
+  .cards {
     justify-content: center;
-   }
+
   }
-  
-  
+
+}
+
+@media (max-width: 340px) {
+
+  .card {
+    max-width: 100%;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+  }
+}

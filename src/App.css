@@ -5,14 +5,16 @@
 
 .App{
   display: flex;
+  flex-direction: row;
   width: 100%;
-  background-color: rgb(242, 244, 246);
 }
 
 .dashboard-body{
   width: 100%;
-  margin: 30px 40px 0px 310px;
+  height: 300vh;
+  padding: 30px 40px 0px 310px;
 }
+
 .charts{
   display: flex;
   justify-content: space-between;
@@ -20,8 +22,17 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .dashboard-body{
-      margin: 30px 40px 0px 110px;
+      padding: 30px 40px 0px 110px;
     }
+}
+
+@media (max-width: 468px) {
+  .dashboard-body{
+    padding: 20px 10px 0px 80px;
+  }
+  .App{
+    width: 75%;
+  }
 }

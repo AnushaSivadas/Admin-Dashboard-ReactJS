@@ -5,7 +5,6 @@
 }
 .searchbar {
     height: 30px;
-    min-width: 150px;
     width: 180px;
     display: flex;
     background-color: white;
@@ -27,6 +26,32 @@
   
   .searchbar input:focus-visible {
     outline: none;
+  }
+
+  @media (max-width: 900px) {
+    .searchbar {
+      width: 130px;
+  }
+  }
+
+  @media (max-width: 600px) {
+    .searchbar {
+      width: 15px;
+    }
+    h4{
+      font-size: small;
+    }
+    .searchbar input[type="text"] {
+      display: none;
+      
+}
+  }
+
+  @media (max-width: 468px) {
+   
+h4{
+  font-size: smaller;
+}
   }
 
  
