@@ -1,14 +1,4 @@
-/* .sidebar {
-    width: 250px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    padding: 10px;
-    background-color: #04042b;
-    transition: left 0.3s ease;
-    z-index: 1000;
-} */
+
 .sidebar{
     
 position: fixed;
@@ -142,4 +132,10 @@ li.active {
     }
     
 
+}
+
+@media (max-width: 468px) {
+    .sidebar{
+        height: 90vh;
+    }
 }
